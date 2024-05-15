@@ -1,0 +1,236 @@
+/* index.html */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.landing-page {
+    background-image: url('../img/backrgound-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.content {
+    text-align: center;
+    color: transparent; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.content h1, .content p, .content .btn {
+    text-align: center;
+    color: #ffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+h1 {
+    font-size: 4rem; 
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem; 
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #242F6D;
+    color: white;
+    text-decoration: none;
+    margin-top: 12px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    font-size: 1.4rem; 
+}
+
+.btn:hover{
+    background-color: #0056b3;
+}
+
+/* Login Page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/backrgound-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    display: flex;
+    max-width: 800px;
+    background: #ffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0 , 0.1);
+}
+
+.login-image {
+    width: 40%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-form {
+    width: 60%;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:#242F6D ;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Register Page */
+.register-page {
+    background-image: url('../img/backrgound-img.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+}
+
+.register-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register-form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="number"],
+.register-form input[type="tel"],
+.register-form input[type="password"],
+.register-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #242F6D;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+.register-form p {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+
+.register-form a {
+    color: #242F6D;
+    text-decoration: none;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+
+.register-form form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    font-size:20px;
+}
